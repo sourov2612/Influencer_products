@@ -1,6 +1,6 @@
 body{
     font-family: "Poppins", sans-serif; 
-    background-color: #ece6e6; 
+    background-color: #f3efef; 
     border: 1px solid black; 
     padding-left: 8%;
     padding-right: 8%;
@@ -190,8 +190,40 @@ body{
 
 .product_price{
     font-weight: 500;
+} 
+
+.see_more{
+    text-decoration: none; 
+    display: flex;
+    justify-content: right;    
+    color: #c92424;
+    font-size: 20px;
+    margin-top: 20px; 
+    margin-right: 3%;
 }
 
+.right_arrow{
+    padding-top: 5px;
+    margin-left: 10px;
+}
+
+
+
+  /* -----------------------
+  -----featured_product section-----
+  -------------------------  */ 
+
+.featured_product{
+    margin: 50px 1px;
+}
+
+.featured_product_text{
+    margin-left: 8%;
+}
+
+.gear{
+    padding-top: 86px;
+}
 
 
 
