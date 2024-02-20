@@ -40,7 +40,8 @@ main{
   -------------------------  */
 
 .start_journey{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .container{
@@ -56,10 +57,9 @@ main{
     width: 50%;
 }
 
-/* .camera{
-    width: 80%; 
-    padding-left: 15px;
-} */
+.camera{
+    padding-left: 40px;
+} 
 
 .text_1{
     font-size: 3em; 
@@ -270,4 +270,49 @@ footer p{
     color: white; 
     background-color: rgb(19, 12, 39);
 }
+
+
+
+
+
+  /* -----------------------
+  -----Responsive section-----
+  -------------------------  */
+
+
+  @media only screen and (max-width:688px) {
+    .start_journey, .products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .companys{
+        grid-template-columns: repeat(4, 1fr); 
+    }
+    .company{
+        padding-bottom: 20px;
+    }
+    .camera{
+        padding-top: 30px;
+    }
+
+  }
+
+
+
+
+
+  @media only screen and (min-width:688px) and (max-width:992px){
+    .start_journey, .featured_product{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .companys{
+        grid-template-columns: repeat(5, 1fr); 
+    }
+    .company{
+        padding-bottom: 20px;
+    }
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
 
